@@ -19,7 +19,7 @@ namespace MergeSort
             var oddOccurrencesService = new OddOccurrencesService();
             var cyclicRotation = new CyclicRotationService();
             var frogJumpService = new FrogJumpService();
-            var maxCounterService = new MaxCountersService();
+            var maxCounterService = new MaxCountersService();   
             var adjacencyMatrixService = new AdjacencyMatrixService();
             var stringShuffleService = new StringShuffleService();
 

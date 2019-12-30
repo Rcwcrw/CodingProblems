@@ -70,7 +70,6 @@ namespace MergeSort
             {
                 max = Math.Max(max, head[i - 1] + tail[i + 1]);
             }
-
             return max;
         }
 
