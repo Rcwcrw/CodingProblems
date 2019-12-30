@@ -15,3 +15,5 @@ jobs:
         dotnet-channel: 3.0
     - name: Build with dotnet
       run: dotnet build --configuration Release
+    - name: Run unit tests
+      run: dotnet test CodingProblems/MaxDoubleSliceService.cs
