@@ -13,7 +13,7 @@ namespace MergeSort
             var array = string.Empty;
             while (array.ToLower() != "exit")
             {
-                Console.WriteLine("Enter an array: ");
+                Console.WriteLine("Enter an array of numbers: ");
                 array = Console.ReadLine();
                 if (array == "exit")
                     break;
