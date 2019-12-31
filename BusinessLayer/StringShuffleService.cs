@@ -20,7 +20,7 @@ namespace MergeSort
             var line = string.Empty;
             while (line.ToLower() != "exit")
             {
-                Console.WriteLine("Enter a string: ");
+                Console.WriteLine("Enter a sentence: ");
                 line = Console.ReadLine();
                 if (line == "exit")
                     break;
