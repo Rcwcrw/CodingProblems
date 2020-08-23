@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MergeSort
 {
-    public class GeneInterviewSerive : IBaseService
+    public class GeneInterviewService : IBaseService
     {
         public void ConsoleRun()
         {
@@ -53,7 +53,7 @@ namespace MergeSort
     [TestFixture]
     public class GeneInterviewSeriveTests
     {
-        public GeneInterviewSerive service = new GeneInterviewSerive();
+        public GeneInterviewService service = new GeneInterviewService();
 
         [Test]
         public void GeneInterviewSeriveTest1()

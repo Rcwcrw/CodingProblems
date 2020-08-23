@@ -25,7 +25,9 @@ namespace MergeSort
             var delegatePracticeService = new DelegatePracticeService();
             var anonLamdaFuncService = new AnonLamdaFuncService();
             var databaseService = new DatabaseService();
-            var geneInterviewSerive = new GeneInterviewSerive();
+            var geneInterviewSerive = new GeneInterviewService();
+            var adventOfCode1Service = new AdventOfCode1Service();
+            var adventOfCode2Service = new AdventOfCode2Service();
             //sortService.ConsoleRun();
             //miscService.ConsoleRun();
             //titleService.ConsoleRun();
@@ -41,7 +43,7 @@ namespace MergeSort
             //delegatePracticeService.ConsoleRun();
             //anonLamdaFuncService.ConsoleRun();
             //databaseService.ConsoleRun();
-            geneInterviewSerive.ConsoleRun();
+            adventOfCode2Service.ConsoleRun();
         }
     }    
 }
