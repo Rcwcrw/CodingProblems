@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace MergeSort
 {
@@ -34,6 +35,25 @@ namespace MergeSort
             for (int i = 0; i < arr.Length; i++)
             {
                 badValues.Add(arr[i]);
+            }
+            
+            while (badValues.Contains(returnValue))
+            {
+                returnValue++;
+            }
+
+            return returnValue;
+        }
+
+        public int GetMissingIntegerOriginal(int[] arr)
+        {
+            var returnValue = 1;
+            var badValues = new HashSet<int>();
+
+            //iterate array
+            for (int i = 0; i < arr.Length; i++)
+            {
+                badValues.Add(arr[i]);
 
                 if (returnValue == arr[i])
                 {
@@ -56,9 +76,13 @@ namespace MergeSort
         [Test]
         public void GetMissingIntegerTest1()
         {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
             var givenArray = new int[] { 1, 3, 6, 4, 1, 2 };
             var expectedArray = 5;
             Assert.AreEqual(expectedArray, service.GetMissingInteger(givenArray));
+            stopwatch.Stop();
+            Console.WriteLine(stopwatch.ElapsedMilliseconds);
         }
     }
 }

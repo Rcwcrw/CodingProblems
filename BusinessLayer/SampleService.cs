@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MergeSort
 {
-    public class SampleService
+    public class SampleService : IBaseService
     {
         public void ConsoleRun()
         {

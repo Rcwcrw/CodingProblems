@@ -22,7 +22,10 @@ namespace MergeSort
             var maxCounterService = new MaxCountersService();   
             var adjacencyMatrixService = new AdjacencyMatrixService();
             var stringShuffleService = new StringShuffleService();
-
+            var delegatePracticeService = new DelegatePracticeService();
+            var anonLamdaFuncService = new AnonLamdaFuncService();
+            var databaseService = new DatabaseService();
+            var geneInterviewSerive = new GeneInterviewSerive();
             //sortService.ConsoleRun();
             //miscService.ConsoleRun();
             //titleService.ConsoleRun();
@@ -34,7 +37,11 @@ namespace MergeSort
             //frogJumpService.ConsoleRun();
             //maxCounterService.ConsoleRun();
             //adjacencyMatrixService.ConsoleRun();
-            stringShuffleService.ConsoleRun();
+            //stringShuffleService.ConsoleRun();
+            //delegatePracticeService.ConsoleRun();
+            //anonLamdaFuncService.ConsoleRun();
+            //databaseService.ConsoleRun();
+            geneInterviewSerive.ConsoleRun();
         }
     }    
 }
