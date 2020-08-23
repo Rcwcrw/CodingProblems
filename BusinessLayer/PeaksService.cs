@@ -37,23 +37,23 @@ namespace MergeSort
     [TestFixture]
     public class PeaksServiceTests
     {
-        public PeaksService service = new PeaksService();
+        //public PeaksService service = new PeaksService();
 
-        [Test]
-        public void PeaksServiceTest1()
-        {
-            var given = new int[] { 1 };
-            var expected = 1;
-            Assert.AreEqual(expected, service.MyMethod(given));
-        }
+        //[Test]
+        //public void PeaksServiceTest1()
+        //{
+        //    var given = new int[] { 1 };
+        //    var expected = 1;
+        //    Assert.AreEqual(expected, service.MyMethod(given));
+        //}
 
-        [Test]
-        public void PeaksServiceTest2()
-        {
-            var given = new int[] { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 };
-            var expected = 3;
+        //[Test]
+        //public void PeaksServiceTest2()
+        //{
+        //    var given = new int[] { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 };
+        //    var expected = 3;
 
-            Assert.AreEqual(expected, service.MyMethod(given));
-        }
+        //    Assert.AreEqual(expected, service.MyMethod(given));
+        //}
     }
 }
