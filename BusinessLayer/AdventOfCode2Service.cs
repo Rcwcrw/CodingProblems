@@ -11,13 +11,16 @@ namespace MergeSort
         {
             var data = GetData();
 
-            Console.WriteLine($"Answer: {ProcessOperations(data)}");
+            Console.WriteLine($"Answer: {ProcessOperations(data, true)}");
         }
 
-        public int ProcessOperations(int[] data)
+        public int ProcessOperations(int[] data, bool replace1and2 = false)
         {
-            data[1] = 12;
-            data[2] = 2;
+            if (replace1and2)
+            {
+                data[1] = 12;
+                data[2] = 2;
+            }
 
             var i = 0;
             while (data[i] != 99)
